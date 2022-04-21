@@ -48,7 +48,28 @@ public class Main {
 
 
         //Задание 5.
+        // сотрудники, работающие дольше 3 лет, получают повышение зарплаты раз в год на 10 % от текущей зарплаты.
+        //Автоматизировать повышение зарплаты, а также провести расчет для следующих сотрудников:
+        //Машае 67 760 * 0,1 рублей в месяц
+        //Денису 83 690 * 0,1 рублей в месяц
+        //Кристинае 76 230 * 0,1 рублей в месяц
+        //посчитать разницу между годовым доходом с нынешней зарплатой и после повышения.
+        // Посчитайте, сколько будет получать каждый из сотрудников,
+        // а также разницу между годовым доходом до и после повышения.
+        //Выведите в консоль информацию по каждому сотруднику.
+        //Например, “Маша теперь получает **** рублей. Годовой доход вырос на **** рублей”.
 
+        int MahaWorks = 4, DenisWorks = 5, KrisWorks = 6;
+        boolean MashaExperience = MahaWorks > 3,DenisExperience = DenisWorks > 3,KrisExperience = KrisWorks > 3;
+        System.out.println ("Experience more than 3 years : " + MashaExperience + DenisExperience + KrisExperience);
+       //проверка стажа работы
+
+        int MahaZp = 67760, DenisZp = 83690, KrisZp = 76230;
+        double apZp = 0.1;
+        double M = apZp * MahaZp + MahaZp, D = apZp * DenisZp + DenisZp, K = apZp*KrisZp+KrisZp;
+        System.out.println ("ZP Maha in next month "+ M + " ru" + " annual salary " + M * 12 +" ru" );
+        System.out.println ("ZP Denis in next month " + D + " ru" + " annual salary " + D * 12 +" ru");
+        System.out.println ("ZP Kris in next month " + K + " ru" + " annual salary " + K * 12 +" ru");
 
 
 
